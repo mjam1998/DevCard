@@ -13,9 +13,9 @@ namespace DevCard_MVC.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController()
         {
-            _logger = logger;
+           
         }
 
         public IActionResult Index()
@@ -23,9 +23,9 @@ namespace DevCard_MVC.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult contact()
         {
-            return View();
+	        return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
